@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remakes de Resident Evil</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e2d3b, #3b1d1d, #2f2f2f);
+      background-size: 400% 400%;
+      animation: bgShift 30s ease infinite;
+      color: #e8e8e8;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    @keyframes bgShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background-color: rgba(24, 24, 24, 0.9);
+      padding: 40px 0;
+      text-align: center;
+      border-bottom: 4px solid #e50914;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+      animation: fadeDown 1.5s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #e50914;
+      text-shadow: 2px 2px 8px #000;
+      letter-spacing: 2px;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    main {
+      width: 90%;
+      max-width: 1000px;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .pantalla {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow:
+        0 0 12px rgba(255, 255, 255, 0.05),
+        0 0 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      animation: fadeInUp 2s ease forwards;
+      opacity: 0;
+      transform: translateY(60px);
+    }
+
+    .pantalla:nth-child(1) { animation-delay: 0.3s; }
+    .pantalla:nth-child(2) { animation-delay: 0.6s; }
+    .pantalla:nth-child(3) { animation-delay: 0.9s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .pantalla h2 {
+      font-size: 2.3em;
+      margin-bottom: 20px;
+      color: #ff4a4a;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    .pantalla p {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+      color: #f0f0f0;
+    }
+
+    .pantalla a.boton {
+      display: inline-block;
+      padding: 14px 30px;
+      font-size: 1.1em;
+      background: linear-gradient(145deg, #8b0000, #ff4444);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 6px 15px rgba(255, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .pantalla a.boton:hover {
+      transform: scale(1.07);
+      box-shadow: 0 8px 20px rgba(255, 80, 80, 0.8);
+    }
+
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+      margin-top: 80px;
+      font-size: 0.9em;
+      border-top: 2px solid #444;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .fade-zoom-out {
+        animation: fadeZoomOut 0.6s forwards;
+    }
+    @keyframes fadeZoomOut {
+        to {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+    }
+
+    .fade-rotate-3d {
+        animation: rotate3dFade 0.6s forwards;
+        transform-origin: center center;
+        backface-visibility: hidden;
+        perspective: 1000px;
+    }
+    @keyframes rotate3dFade {
+        to {
+            opacity: 0;
+            transform: rotateY(90deg);
+        }
+    }
+
+    .fade-slide-left {
+        animation: slideLeftFade 0.6s forwards;
+    }
+    @keyframes slideLeftFade {
+        to {
+            opacity: 0;
+            transform: translateX(-100vw);
+        }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Resident Evil Remakes</h1>
+  </header>
+
+  <main>
+    <section class="pantalla">
+      <h2>Resident Evil 2 Remake</h2>
+      <p>Leon y Claire enfrentan el brote del virus en Raccoon City, en una reimaginación moderna del clásico de 1998.</p>
+      <a class="boton" href="#" onclick="fadeAndRedirect('evil2.html', 'fade-zoom-out')">Explorar</a>
+    </section>
+
+    <section class="pantalla">
+      <h2>Resident Evil 3 Remake</h2>
+      <p>Jill Valentine intenta escapar de la ciudad mientras es perseguida por el implacable Némesis en una ciudad colapsada.</p>
+      <a class="boton" href="#" onclick="fadeAndRedirect('evil3.html', 'fade-rotate-3d')">Explorar</a>
+    </section>
+
+    <section class="pantalla">
+      <h2>Resident Evil 4 Remake</h2>
+      <p>Leon regresa en una misión para rescatar a la hija del presidente en una aldea española plagada por el culto de Los Iluminados.</p>
+      <a class="boton" href="#" onclick="fadeAndRedirect('evil4.html', 'fade-slide-left')">Explorar</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fans de Resident Evil. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function fadeAndRedirect(url, animationClass) {
+      document.body.classList.add(animationClass);
+      document.body.style.animationFillMode = "forwards";
+      setTimeout(() => {
+        window.location.href = url;
+      }, 600);
+    }
+  </script>
+</body>
+</html>
