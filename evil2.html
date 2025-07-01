@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resident Evil 2 Remake</title>
+ <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e2a38, #264060);
+    color: #d7dce3;
+    margin: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: bgFade 20s ease-in-out infinite alternate;
+  }
+
+  @keyframes bgFade {
+    0% { background: linear-gradient(135deg, #1e2a38, #264060); }
+    100% { background: linear-gradient(135deg, #22384f, #1b2433); }
+  }
+
+  header {
+    background-color: rgba(15, 22, 35, 0.9);
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(50, 90, 180, 0.6);
+    border-bottom: 3px solid #0078d7;
+    animation: headerFadeIn 2s ease forwards;
+  }
+
+  @keyframes headerFadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: #0078d7;
+    text-shadow: 2px 2px 6px #000;
+    margin: 0;
+  }
+
+  section {
+    background: rgba(18, 28, 45, 0.9);
+    max-width: 900px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow:
+      0 0 15px #0078d7,
+      0 0 30px rgba(0, 120, 215, 0.5);
+    font-size: 1.1rem;
+    animation: sectionSlideIn 1.5s ease forwards;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @keyframes sectionSlideIn {
+    from {opacity: 0; transform: translateY(50px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  section img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    margin-bottom: 25px;
+    animation: imgPulse 4s ease-in-out infinite;
+  }
+
+  @keyframes imgPulse {
+    0%, 100% {filter: brightness(1);}
+    50% {filter: brightness(1.1);}
+  }
+
+  ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 25px;
+  }
+
+  a.volver {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0078d7;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 120, 215, 0.6);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  a.volver:hover {
+    background-color: #005ea6;
+    color: #d0dfff;
+    box-shadow: 0 6px 15px rgba(0, 94, 166, 0.9);
+    transform: scale(1.07) rotate(-2deg);
+  }
+
+  a.volver:active {
+    animation: clickBounce 0.25s ease forwards;
+  }
+
+  @keyframes clickBounce {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(0.85) rotate(5deg); }
+    100% { transform: scale(1) rotate(0deg); }
+  }
+
+  @keyframes fadeOutUp {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-40px); }
+  }
+
+  .fade-out-up {
+    animation: fadeOutUp 0.5s forwards;
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>Resident Evil 2 Remake</h1>
+  </header>
+
+  <section id="contenido">
+    <img src="./img/2.png" alt="2" />
+ 
+       
+      <p>Mientras el caos se desata en Raccoon City, Leon S. Kennedy llega a la ciudad para su primer día como policía. Allí conoce a Claire Redfield, que está buscando a su hermano Chris. Ambos terminan atrapados en la comisaría de policía y luego en las alcantarillas y laboratorios subterráneos de Umbrella.
+
+Leon se cruza con Ada Wong, una misteriosa mujer que dice trabajar para el gobierno, pero tiene sus propios motivos. Claire rescata a Sherry Birkin, una niña cuya madre y padre (William Birkin) están involucrados en la creación del virus-G.
+
+Finalmente, Leon, Claire y Sherry logran escapar del laboratorio antes de su autodestrucción. William Birkin, mutado por el virus-G, es derrotado definitivamente. La verdad sobre Umbrella empieza a salir a la luz.</p>
+    <p>
+      Resident Evil 2 Remake es una reinvención moderna del clásico de 1998. Controlas a Leon S. Kennedy y Claire Redfield mientras intentan sobrevivir al brote del virus en Raccoon City.
+      Esta versión trae gráficos modernos, escenarios más oscuros, mecánicas renovadas y una atmósfera de terror más intensa.
+    </p>
+
+    <ul>
+      <li>Desarrollador: Capcom</li>
+      <li>Plataformas: PC, PS4, PS5, Xbox One, Series X/S</li>
+      <li>Género: Survival Horror, Acción</li>
+    </ul>
+
+    <p>
+      🎮 Mecánicas del Juego<br />
+      - Exploración del departamento de policía (RPD), alcantarillas y laboratorio.<br />
+      - Puzzles clásicos con objetos clave y backtracking.<br />
+      - Inventario limitado, gestión de recursos vital.<br />
+      - Combate con pistolas, escopetas y armas especiales.<br />
+      - Dos campañas distintas (Leon y Claire) con narrativa entrelazada.
+    </p>
+
+    <p>
+      🔫 Armas<br />
+      - Pistola estándar (Matilda / SLS 60)<br />
+      - Escopeta (W-870) / Lanzagranadas<br />
+      - Magnum / SMG<br />
+      - Cuchillo de combate y armas secundarias<br />
+      - Mejoras disponibles con partes escondidas por el mapa
+    </p>
+
+    <p>
+      👹 Enemigos y Jefes<br />
+      - Zombis lentos pero resistentes<br />
+      - Lickers: Rápidos, ciegos y letales<br />
+      - G-mutantes en las alcantarillas<br />
+      - William Birkin (G-virus) en múltiples fases<br />
+      - Mr. X (Tyrant): Implacable perseguidor que no se detiene
+    </p>
+
+    <p>
+      🗺️ Lugares emblemáticos<br />
+      - Comisaría de Raccoon City (RPD)<br />
+      - Orfanato (escenario de Sherry)<br />
+      - Alcantarillas infectadas<br />
+      - NEST: laboratorio de Umbrella<br />
+      - Calles y zonas destruidas por el brote viral
+    </p>
+
+    <p>
+      🧍‍♂️ Personajes principales<br />
+      ▶️ Leon S. Kennedy – Novato en su primer día como policía<br />
+      ▶️ Claire Redfield – Estudiante universitaria en busca de su hermano Chris<br />
+      ▶️ Ada Wong – Espía misteriosa que colabora con Leon<br />
+      ▶️ Sherry Birkin – Niña atrapada en medio del caos<br />
+      ▶️ William Birkin – Científico mutado por el G-virus
+    </p>
+
+     <a class="volver" href="remake.html" id="btnVolver">← Volver al inicio</a>
+  </section>
+
+  <script>
+    const btnVolver = document.getElementById('btnVolver');
+    btnVolver.addEventListener('click', function(event) {
+      event.preventDefault();
+      btnVolver.classList.add('fade-out-up');
+      btnVolver.addEventListener('animationend', () => {
+        window.location.href = btnVolver.href;
+      }, { once: true });
+    });
+  </script>
+</body>
+</html>

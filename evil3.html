@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resident Evil 3 Remake</title>
+  <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2a1b1b, #3b1d1d, #1e1212);
+    background-size: 400% 400%;
+    animation: bgShift 30s ease infinite;
+    color: #f4e6e6; /* color claro para texto */
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  @keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  header {
+    background-color: rgba(45, 10, 10, 0.9);
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 4px solid #b12727; /* rojo oscuro */
+    box-shadow: 0 6px 20px rgba(177, 39, 39, 0.6);
+    animation: fadeDown 1.5s ease-out;
+  }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  header h1 {
+    font-size: 3rem;
+    color: #b12727; /* rojo oscuro */
+    text-shadow: 2px 2px 8px #000000aa;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  section {
+    background: rgba(40, 15, 15, 0.85);
+    max-width: 900px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow:
+      0 0 15px #b12727,
+      0 0 35px rgba(177, 39, 39, 0.5);
+    color: #f7e9e9; /* texto claro */
+    font-size: 1.1rem;
+    animation: fadeInUp 2s ease forwards;
+    opacity: 0;
+    transform: translateY(60px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  section img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(50, 10, 10, 0.8);
+    margin-bottom: 25px;
+    animation: imgPulse 4s ease-in-out infinite;
+  }
+
+  @keyframes imgPulse {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.1); }
+  }
+
+  ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 25px;
+  }
+
+  a.volver {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(145deg, #7a1313, #d42e2e);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(212, 46, 46, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  a.volver:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(255, 50, 50, 0.9);
+  }
+
+  @keyframes fadeOutUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+  }
+  .fade-out-up {
+    animation: fadeOutUp 0.5s forwards;
+  }
+</style>
+
+
+</head>
+<body>
+  <header>
+    <h1>Resident Evil 3 Remake</h1>
+  </header>
+
+  <section id="contenido">
+    <img src="img/3.png" alt="3"/>
+
+    <p>
+     Raccoon City ha sido infectada por el virus-T, liberado por la corporación Umbrella. Jill Valentine, ex miembro de S.T.A.R.S., trata de escapar de la ciudad mientras es perseguida por Nemesis, un arma bio-orgánica enviada para eliminar a los sobrevivientes de S.T.A.R.S.
+
+Durante su huida, conoce a Carlos Oliveira, un soldado del escuadrón U.B.C.S. Aunque al principio desconfía de él, terminan colaborando. Jill es infectada por el virus pero Carlos consigue una cura. Tras vencer a Nemesis en su forma final, Jill y Carlos escapan de la ciudad.
+
+☢️ Poco después, el gobierno de EE. UU. lanza un misil nuclear que destruye Raccoon City, intentando encubrir el desastre biológico.
+    </p>
+
+    <ul>
+      <li>Desarrollador: Capcom</li>
+      <li>Plataformas: PC, PS4, Xbox One</li>
+      <li>Género: Survival Horror, Acción</li>
+    </ul>
+
+    <p>
+      Información General del Juego<br />
+      Nombre completo: Resident Evil 3 Remake<br />
+      Género: Survival Horror, Acción<br />
+      Plataformas: PC, PS4, Xbox One<br />
+      Perspectiva: Tercera persona<br />
+      Duración media: 6-8 horas (campaña principal)
+    </p>
+
+    <p>
+      🎮 Mecánicas del Juego<br />
+      Exploración: Ambientes urbanos densos, con múltiples rutas y opciones de sigilo.<br />
+      Combate: Uso de armas de fuego, granadas y objetos de apoyo.<br />
+      Huida: Enfoque en escapar y sobrevivir a los ataques del Némesis.<br />
+      Progresión: Mejoras de armas y habilidades limitadas.<br />
+      Multijugador: Incluye modo asimétrico “Resistance”.
+    </p>
+
+    <p>
+      👹 Enemigos Principales<br />
+      Némesis: Cazador implacable que persigue a Jill.<br />
+      Zombis: Humanos infectados por el virus T.<br />
+      Hunters: Criaturas rápidas y letales.<br />
+      Otros: Mutantes y enemigos ambientales.
+    </p>
+    
+      <p>
+  🧍‍♀️ Personajes principales<br />
+  ▶️ Jill Valentine – Ex miembro de S.T.A.R.S. que intenta escapar de Raccoon City<br />
+  ▶️ Carlos Oliveira – Soldado de la U.B.C.S. que ayuda a Jill<br />
+  ▶️ Nicholai Ginovaef – Oficial de la U.B.C.S. con intenciones ocultas<br />
+  ▶️ Mikhail Victor – Comandante del pelotón U.B.C.S. que se sacrifica por su equipo<br />
+  ▶️ Nemesis – Arma bio-orgánica enviada para eliminar a los miembros de S.T.A.R.S.
+     </p>
+
+    <a class="volver" href="remake.html" id="btnVolver">← Volver al inicio</a>
+  </section>
+
+  <script>
+    const btnVolver = document.getElementById('btnVolver');
+    btnVolver.addEventListener('click', function(event) {
+      event.preventDefault();
+      btnVolver.classList.add('fade-out-up');
+      btnVolver.addEventListener('animationend', () => {
+        window.location.href = btnVolver.href;
+      }, { once: true });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resident Evil 4 Remake</title>
+ <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0c0f14, #1c1e23, #232b35);
+    background-size: 400% 400%;
+    animation: bgShift 30s ease infinite;
+    color: #d4d4d4;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  @keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  header {
+    background-color: rgba(15, 17, 20, 0.95);
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 4px solid #bc8743; /* cobre envejecido */
+    box-shadow: 0 6px 20px rgba(188, 135, 67, 0.4);
+    animation: fadeDown 1.5s ease-out;
+  }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  header h1 {
+    font-size: 3rem;
+    color: #bc8743;
+    text-shadow: 2px 2px 8px #000;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  section {
+    background: rgba(255, 255, 255, 0.03);
+    max-width: 900px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow:
+      0 0 15px rgba(255, 255, 255, 0.05),
+      0 0 30px rgba(0, 0, 0, 0.4);
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    animation: fadeInUp 2s ease forwards;
+    opacity: 0;
+    transform: translateY(60px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  section img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    margin-bottom: 25px;
+    animation: imgPulse 4s ease-in-out infinite;
+  }
+
+  @keyframes imgPulse {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.1); }
+  }
+
+  ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 25px;
+  }
+
+  a.volver {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(145deg, #5a3b1a, #bc8743);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(188, 135, 67, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  a.volver:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(188, 135, 67, 0.9);
+  }
+
+  @keyframes fadeOutUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+  }
+
+  .fade-out-up {
+    animation: fadeOutUp 0.5s forwards;
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>Resident Evil 4 Remake</h1>
+  </header>
+
+  <section id="contenido">
+    <img src="./img/4.png" alt="4" />
+
+    <p>
+     Leon S. Kennedy, ahora agente del gobierno, es enviado a un pueblo remoto en España para rescatar a Ashley Graham, la hija del presidente de EE. UU., secuestrada por un culto conocido como Los Iluminados.
+
+Leon descubre que el culto ha infectado a los habitantes con un parásito llamado Las Plagas. Durante su misión, se reencuentra con Ada Wong, quien sigue operando como agente doble. También conoce a Luis Sera, un ex investigador que lo ayuda a combatir al culto.
+
+El líder de Los Iluminados, Osmund Saddler, planea usar a Ashley para expandir su control sobre el mundo. Leon logra rescatarla y eliminar a Saddler. Ada ayuda a Leon en momentos clave, pero se queda con una muestra de Las Plagas, revelando que trabaja para otra organización con sus propios fines.
+    </p>
+
+    <ul>
+      <li>Desarrollador: Capcom</li>
+      <li>Plataformas: PC, PS4, PS5, Xbox One, Xbox Series X/S</li>
+      <li>Género: Survival Horror, Acción</li>
+    </ul>
+
+    <p>
+      Información General del Juego<br />
+      Nombre completo: Resident Evil 4 Remake<br />
+      Género: Survival Horror, Acción<br />
+      Plataformas: PC, PS4, PS5, Xbox One, Xbox Series X/S<br />
+      Perspectiva: Tercera persona<br />
+      Duración media: 10-12 horas (campaña principal)
+    </p>
+
+    <p>
+      🎮 Mecánicas del Juego<br />
+      Exploración: Ambientes variados entre pueblos, castillos y laboratorios.<br />
+      Combate: Enfocado en armas de fuego, objetos explosivos y combate cuerpo a cuerpo.<br />
+      Mejoras: Armas personalizables y mejoras para habilidades.<br />
+      Sigilo: Opcional en varias partes del juego.<br />
+      Puzzles: Rompecabezas ambientales clásicos.<br />
+      Enemigos: Humanos infectados, criaturas mutantes y jefes memorables.
+    </p>
+
+    <p>
+      👹 Enemigos Principales<br />
+      Los Ganados: Habitantes infectados y hostiles.<br />
+      Jefes: Incluye múltiples jefes desafiantes, cada uno con mecánicas únicas.<br />
+      Criaturas mutantes: Varias formas horribles de bioterrorismo.<br />
+      Elementos ambientales: Trampas y zonas peligrosas.
+    </p>
+     
+      <p>
+  🧍‍♂️ Personajes principales<br />
+  ▶️ Leon S. Kennedy – Agente especial enviado a rescatar a la hija del presidente<br />
+  ▶️ Ashley Graham – Hija del presidente de EE. UU., secuestrada por un culto<br />
+  ▶️ Luis Sera – Ex investigador que ayuda a Leon<br />
+  ▶️ Ada Wong – Espía enigmática con sus propios objetivos<br />
+  ▶️ Osmund Saddler – Líder del culto Los Iluminados y principal antagonista
+</p>
+
+    <a class="volver" href="remake.html" id="btnVolver">← Volver al inicio</a>
+  </section>
+
+  <script>
+    const btnVolver = document.getElementById('btnVolver');
+    btnVolver.addEventListener('click', function(event) {
+      event.preventDefault();
+      btnVolver.classList.add('fade-out-up');
+      btnVolver.addEventListener('animationend', () => {
+        window.location.href = btnVolver.href;
+      }, { once: true });
+    });
+  </script>
+</body>
+</html>
